@@ -1,4 +1,6 @@
 # Update
+- Client has been overhauled with a server selector
+# Update
 - Discord bot has been updated
 - The server will kick players without a name now
 # Update
