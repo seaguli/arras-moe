@@ -2945,7 +2945,7 @@ function PlaySound210() {
                     var c = [
                         ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Press the Starter tab on the client page!"],
                         ["Stuck on connecting? Push the Starter tab on the client page!",
-                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
+                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "Have you tried Diep.io yet?", "All tanks have up to 10x reload!"
                         ],
                         ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
                             "Good Luck!"
@@ -3083,7 +3083,7 @@ function PlaySound210() {
             const p = {
                 openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
                 glitch: a => `${a}.glitch.me`,
-                replit: (a, e) => `${e}.${a}.repl.co`,
+                replit: a => `${a}.repl.co`,
                 heroku: a => `${a}.herokuapp.com`,
                 arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
                 arrasUnknown: (a, e = 5E3) => `ipu-${a}.arras.io:${e}`
@@ -3164,7 +3164,7 @@ function PlaySound210() {
             z: "Private",
             local: "Local",
             dvi: "DVI",
-        
+            replit: "Repl.it",
             os: "OpenShift",
             heroku: "Heroku",
                 glitch: "Glitch",
@@ -3233,6 +3233,14 @@ function PlaySound210() {
             type: "main",
             code: "heroku-virginia-4",
             at: p.heroku('arras-mayhem'),
+           // featured: 1, // For Featured Status.
+          },
+                         {
+                             visible: 0,
+            id: "Repl.it-Legacy",
+            type: "legacy",
+            code: "replit-virginia-2",
+            at: p.replit('arras-mayhem-legacy.seaguli'),
            // featured: 1, // For Featured Status.
           },
           
