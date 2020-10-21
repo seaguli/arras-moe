@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta Properties -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="description" content="This 2D shooter game is full of cute tanks! Will you write the way into their nonexistent hearts?">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fddlc_logo_blank_by_rockmedved_dc7ztrw-pre%20(8)%20(1).png?v=1599640072639">
+  <meta property="og:image:width" content="100">
+  <meta property="og:image:height" content="100">
+  <title>arras.io</title>
+<style>
+body {
+  font-family: Caveat;
+  font-size: 14px;
+  background-color: #ffd1f7;
+}
+#page-wrap {
+    margin: 20px;
+    width: auto;
+}
+
+
+#bot:hover {
+  animation: pfpHoverOn 1s linear both;
+}
+
+@keyframes pfpHoverOn { 
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.4% { transform: matrix3d(1.032, 0, 0, 0, 0, 1.041, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.7% { transform: matrix3d(1.045, 0, 0, 0, 0, 1.06, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.81% { transform: matrix3d(1.066, 0, 0, 0, 0, 1.089, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.41% { transform: matrix3d(1.088, 0, 0, 0, 0, 1.117, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  10.21% { transform: matrix3d(1.094, 0, 0, 0, 0, 1.123, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.61% { transform: matrix3d(1.112, 0, 0, 0, 0, 1.133, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.11% { transform: matrix3d(1.114, 0, 0, 0, 0, 1.133, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.52% { transform: matrix3d(1.121, 0, 0, 0, 0, 1.124, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.72% { transform: matrix3d(1.121, 0, 0, 0, 0, 1.119, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  21.32% { transform: matrix3d(1.12, 0, 0, 0, 0, 1.107, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.32% { transform: matrix3d(1.115, 0, 0, 0, 0, 1.096, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { transform: matrix3d(1.113, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% { transform: matrix3d(1.106, 0, 0, 0, 0, 1.09, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.93% { transform: matrix3d(1.105, 0, 0, 0, 0, 1.09, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  35.54% { transform: matrix3d(1.098, 0, 0, 0, 0, 1.096, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  36.74% { transform: matrix3d(1.097, 0, 0, 0, 0, 1.098, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  41.04% { transform: matrix3d(1.096, 0, 0, 0, 0, 1.102, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  44.44% { transform: matrix3d(1.097, 0, 0, 0, 0, 1.103, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% { transform: matrix3d(1.099, 0, 0, 0, 0, 1.101, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  59.86% { transform: matrix3d(1.101, 0, 0, 0, 0, 1.099, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  63.26% { transform: matrix3d(1.101, 0, 0, 0, 0, 1.099, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  75.28% { transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  85.49% { transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  90.69% { transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+</style>
+                 <script>
+var bflat = new Audio();
+bflat.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg");
+function PlaySound() {
+  bflat.load();   
+    bflat.play();
+}
+</script>
+                          <script>
+var bflat2 = new Audio();
+bflat2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/syt.ogg");
+function PlaySound1() {
+  bflat2.load();   
+    bflat2.play();
+}
+</script>
+
+                          <script>
+var bflat3 = new Audio();
+bflat3.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cancel.wav");
+function PlaySound2() {
+  bflat3.load();   
+    bflat3.play();
+  setTimeout(function(){ self.close(); }, 400);
+}
+</script>
+
+  <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2FLogo.png?v=1595837913869">
+  <meta name="theme-color" content="#8abc3f">
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+</head>
+
+<font size="10">
+Arras-mayhem - Official game guide<font size="2" face="caveat"><br>
+
+
+ <div class="bot">
+<img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fddlc_logo_blank_by_rockmedved_dc7ztrw-pre%20(8)%20(1).png?v=1599640072639" onclick="PlaySound()" width="100" height="100" title="how moe"><br><br><div>
+
+</font><font size="10" face="caveat">Basics
+</font><font size="2" face="caveat"><br><br>
+
+</font><font size="4" face="caveat">Welcome to arras-mayhem, where every tank's reload speed is tuned up by a lot! Have fun blowing up your enemies with an Annihilator that shoots every millisecond!<br><br>
+
+<video width="480" height="240" controls>
+  <source src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fvideo_13.webm?v=1603175820027" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<video width="480" height="240" controls>
+  <source src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fvideo_14.webm?v=1603175564925" type="video/mp4">
+Your browser does not support the video tag.
+</video><br>
+
+<video width="480" height="240" controls>
+  <source src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fvideo%20(1).webm?v=1603176153258" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<video width="480" height="240" controls>
+  <source src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fvideo_12.webm?v=1603176038748" type="video/mp4">
+Your browser does not support the video tag.
+</video><br>
+
+
+ <div id="page-wrap">
+</font><font size="10" face="Caveat"<b>NPCS</b>
+</font><font size="4" face="Caveat"><br><br>
+
+AI contolled tanks that may or may not try to kill you.<br><br>
+
+
+<b>Bot</b><br>
+Not the smartest of tanks, but can pack a punch. Bots on your team won't attack you, use this to your advantage!</b><br>
+<img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fscreenshot%20(2)%20(1).png?v=1603172351176" onclick="PlaySound()" onmouseover="PlaySound1()"  width="300" height="300" title="Come on. Come and have a go, pal. I dare you!"><br><br>
+
+
+
+
+<b>Dominator</b><br>
+Stationary tank that can be captured and be made to fight alongside your team. Be wary though, enemies can capture your Dominator at any time!<br><br>
+<img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fscreenshot%20(4)%20(1).png?v=1603173005075" onclick="PlaySound()" onmouseover="PlaySound1()"   width="300" height="300" title="The big one"><br><br>
+
+
+<b>Base</b><br>
+Invincible tank that can be found at spawn points/bases. Makes quick work of any enemy tanks willing to lock eyes with it.<br><br>
+<img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fimage%20(3).png?v=1603172225742" onclick="PlaySound()" onmouseover="PlaySound1()"  width="300" height="300" title="The big bad"><br><br>
+
+<b>Crasher</b><br>
+Barely a threat on their own, but large numbers will pose a great challenge.<br><br>
+<img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fscreenshot%20(5)%20(1).png?v=1603173223087" onclick="PlaySound()" onmouseover="PlaySound1()"  width="300" height="300" title="The arras.io equivalent of a mosquito"><br><br>
+
+
+<b>Sentry</b><br>
+Occasionally found in place of a crasher, they will vary in power based on what weapon they're carrying.<br><br>
+<img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fscreenshot%20(8)%20(1).png?v=1603174355469" onclick="PlaySound()" onmouseover="PlaySound1()"  width="300" height="300" title="Buff mosquito"><br><br>
+
+<b>Elite Crasher</b><br>
+Originally quite weak, they've been buffed in this iteration of arras.io. Oh, did I mention they're a lot more "intimidating"? <br><br>
+<img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fscreenshot%20(7)%20(1).png?v=1603173739416" onclick="PlaySound()" onmouseover="PlaySound1()"  width="300" height="300" title="spin to team"><br><br>
+
+<input type="button" value="Close this window" onclick="PlaySound2(); "><br>
+
+
+
+  <audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2F03.%20CatWalk.mp3?v=1603176394876" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ </div>
+</font>
+</td></tr>
+</table>
+
+</body>
+</html>
