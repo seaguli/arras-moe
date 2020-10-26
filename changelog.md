@@ -1,4 +1,9 @@
 # Update
+- Added animated tanks Akafuji and Switcheroo
+- Akafuji branches off Lancer at lvl 45
+- Switcheroo branches off Basic (Page 2) at lvl 45
+- Added experimental IP blacklisting system for Heroku servers to stop lagbots
+# Update
 - Discord bot has been updated
 - The server will kick players without a name now
 # Update
