@@ -446,8 +446,8 @@ body.mobile .startMenuSlidingContent {
      animation:pfpHoverOn 800ms linear both;
 }
 body.mobile .icon {
-  width: 90px;
-  height: 90px;
+  width: 55px;
+  height: 55px;
 }
 
 #patchNotes {

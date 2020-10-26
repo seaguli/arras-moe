@@ -3654,7 +3654,7 @@ function PlaySound210() {
                             this.emit("L");
                             break;
                         case a.KEY_ABILITY:
-                            this.emit("V")
+                           this.emit("ChangeTankOne");
                     }
                     if (!e.ctrlKey && !e.altKey) {
                         if (a.canSkill) {
