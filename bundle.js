@@ -3222,6 +3222,15 @@ function PlaySound210() {
           },
           {
             visible: 0,
+            id: "Heroku-FFA",
+            type: "beta",
+            code: "heroku-frankfurt-f",
+            at: p.heroku('arras-moe'),
+            prefer: !0,
+            featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
             id: "Glitch-Developer",
             type: "dev",
             code: "glitch-virginia-f",
