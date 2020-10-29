@@ -2687,6 +2687,8 @@ function PlaySound210() {
                                 N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.guiwhite, "center")
                                   if (z.name.includes('[AI]'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.lgrey : l.lgrey, "center")
                               if (z.name.includes('?????'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
+                               if (z.name.includes('Impostor'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
+                               if (z.name.includes('Crewmate'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.blue : l.blue, "center")
                                 if (z.name.includes('Ghastboo'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? "#5374f5" : "#5374f5", "center")
                               if (z.name.includes('Dev'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.yellow : l.yellow, "center")
                                 //};// name color
@@ -2760,6 +2762,8 @@ function PlaySound210() {
                                   if (b.label.includes('[AI]'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, 150 > Date.now() % 300 ? "#cccecf" : "#cccecf", "center", !0);
                                   if (b.label.includes('Dev'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.yellow, "center", !0);
                                      if (b.label.includes('?????'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
+                                      if (b.label.includes('Impostor'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
+                                    if (b.label.includes('Crewmate'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
                                       if (b.label.includes('Ghastboo'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, "#5374f5", "center", !0);
                                     let f = 14 / b.position.axis;
                                     ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
@@ -2902,6 +2906,10 @@ function PlaySound210() {
                         ba(b.screenWidth / 2 - t * u.middle.x * .707 - 190 - 70, b.screenHeight / 2 - 35 + t * u.middle.x * .707 - 10, m, 1.5, 1, .5 * t / m.realSize, -Math.PI / 4, !0);
                                var inputVal = document.getElementById("playerNameInput").value;
                         a.draw(inputVal + " was not The Impostor", d, n - 80, 10, l.guiwhite, "center");
+                       if (z.name.includes('Impostor'))a.draw("wait, what?", d, n - 60, 10, l.guiwhite, "center");
+                       if (z.name.includes('[AI]'))a.draw("stop playing as a robot", d, n - 60, 10, l.guiwhite, "center");
+                      if (z.name.includes('Crewmate'))a.draw("you were kinda sus", d, n - 60, 10, l.guiwhite, "center");
+                       if (z.name.includes('Dev'))a.draw("you probably aren't the dev, just a pooooser ツ", d, n - 60, 10, l.guiwhite, "center");
                         e.draw("Level " +
                             A.__s.getLevel() + " " + M[A.type].name, d - 170, n - 30, 24, l.guiwhite);
                         c.draw("Final score: " + H.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, n + 25, 50, l.guiwhite);
@@ -2969,6 +2977,16 @@ function PlaySound210() {
                         F(T(l.red, l.guiblack, .3), .25);
                         a.draw("\ud83d\udc94 Disconnected  \ud83d\udc94", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
                         e.draw(b.message, b.screenWidth / 2, b.screenHeight / 2 + 30, 15, l.orange, "center")
+                       var inputVal = document.getElementById("playerNameInput").value;
+            if (inputVal.includes("Seaguli")) {
+              a.draw(
+                "Your Developer Token was invalid!",
+                b.screenWidth / 2,
+                b.screenHeight / 2 + 30, 15,
+                l.orange,
+                "center"
+              );
+            }
                     }
                 })();
             let Oa = b.mobile ? 0 : Math.max(0, 1 - Math.abs(Date.now() - new Date(2019, 11, 25)) / 20736E5);

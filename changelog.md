@@ -1,4 +1,6 @@
 # Update
+- Added Heroku Europe FFA server with non-public token
+# Update
 - Added animated tanks Akafuji and Switcheroo
 - Akafuji branches off Lancer at lvl 45
 - Switcheroo branches off Basic (Page 2) at lvl 45
