@@ -4168,7 +4168,31 @@ function PlaySound210() {
                     white: "#ffe3fa",
                     guiblack: "#000000",
                     paletteSize: 10,
-                    border: .40
+                    border: .30
+                },
+                  light: {
+                    teal: "#7ADBBC",
+                    lgreen: "#B9E87E",
+                    orange: "#E7896D",
+                    yellow: "#FDF380",
+                    lavender: "#B58EFD",
+                    pink: "#EF99C3",
+                    vlgrey: "#E8EBF7",
+                    lgrey: "#AA9F9E",
+                    guiwhite: "#FFFFFF",
+                    black: "#484848",
+                    blue: "#3CA4CB",
+                    green: "#8ABC3F",
+                    red: "#E03E41",
+                    gold: "#EFC74B",
+                    purple: "#8D6ADF",
+                    magenta: "#CC669C",
+                    grey: "#A7A7AF",
+                    dgrey: "#726F6F",
+                    white: "#DBDBDB",
+                    guiblack: "#000000",
+                    paletteSize: 10,
+                    border: .65
                 },
                 classic: {
                     teal: "#8EFFFB",

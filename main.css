@@ -92,7 +92,7 @@ h3 {
 }
 .serverSelector tr.featured {
   color: #e8ae00;
-  text-shadow: /*#ffe500 0 0 4px,*/ #fff27e 0 0 6px;
+  text-shadow: #ffe500 0 0 4px, #fff27e 0 0 6px;
 }
 .serverSelector tr.selected {
   color: #8ABC3F;
@@ -438,6 +438,7 @@ body.mobile .startMenuSlidingContent {
 .icon {
   display: block;
   width: 96px;
+  padding: 3.5px;
   height: 96px;
   border-radius: 50%;
      animation:pfpDefault 800ms linear both;
