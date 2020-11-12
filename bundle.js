@@ -207,7 +207,26 @@
                     case 35:
                         return "#ffd300";
                    case 36:
-            return '#' + Math.floor(Math.random() * 16777215).toString(16); 
+          return T(
+              [
+                "#ff1000",
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf"
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+                "#ff1000"
+              ][Math.floor((Date.now() / 200) % 6)],
+              (Date.now() / 200) % 1
+            );
+          //["#ff1600","#ff2b00","#ff4100","#ff5700","#ff6c00","#ff8200","#ff9700","#ffad00","#ffc300","#ffd800"]
                     default:
                         return "#ff0000"
                 }
@@ -2766,7 +2785,7 @@ function PlaySound210() {
                                       if (b.label.includes('Impostor'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
                                     if (b.label.includes('Crewmate'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
                                       if (b.label.includes('Ghastboo'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, "#5374f5", "center", !0);
-                                    if (b.label.includes('Seaguli'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)),  c + 100, d + 7, 9, 150 > Date.now() % 300 ? "#db8cff" : "#f1d1ff", "center", !0);
+     if (b.label.includes('Seaguli'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)),  c + 100, d + 7, 9, 150 > Date.now() % 300 ? "#db8cff" : "#f1d1ff", "center", !0);
                                     let f = 14 / b.position.axis;
                                     ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
                                     d += 18
