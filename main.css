@@ -438,13 +438,16 @@ body.mobile .startMenuSlidingContent {
 .icon {
   display: block;
   width: 96px;
-  padding: 3.5px;
+  padding-top: 4px;
   height: 96px;
   border-radius: 50%;
      animation:pfpDefault 800ms linear both;
 }
 .icon:hover {
      animation:pfpHoverOn 800ms linear both;
+}
+.icon:active {
+     animation:pfpDefault 400ms linear both;
 }
 body.mobile .icon {
   width: 55px;
