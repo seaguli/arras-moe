@@ -2707,7 +2707,7 @@ function PlaySound210() {
                                   if (z.name.includes('[AI]'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.lgrey : l.lgrey, "center")
                               if (z.name.includes('?????'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
                                if (z.name.includes('Impostor'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
-                                if (z.name.includes('Seaguli'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : "#db8cff", "center")
+                                if (z.name.includes('Seaguli'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? "#db8cff" : "#db8cff", "center")
                                if (z.name.includes('Crewmate'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.blue : l.blue, "center")
                                 if (z.name.includes('Ghastboo'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? "#5374f5" : "#5374f5", "center")
                               if (z.name.includes('Dev'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.yellow : l.yellow, "center")
@@ -2785,7 +2785,7 @@ function PlaySound210() {
                                       if (b.label.includes('Impostor'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
                                     if (b.label.includes('Crewmate'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
                                       if (b.label.includes('Ghastboo'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, "#5374f5", "center", !0);
-     if (b.label.includes('Seaguli'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)),  c + 100, d + 7, 9, 150 > Date.now() % 300 ? "#db8cff" : "#f1d1ff", "center", !0);
+     if (b.label.includes('Seaguli'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)),  c + 100, d + 7, 9, 150 > Date.now() % 300 ? "#db8cff" : "#db8cff", "center", !0);
                                     let f = 14 / b.position.axis;
                                     ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
                                     d += 18
