@@ -2706,6 +2706,7 @@ function PlaySound210() {
                                 N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.guiwhite, "center")
                                   if (z.name.includes('[AI]'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.lgrey : l.lgrey, "center")
                               if (z.name.includes('?????'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
+                               if (z.name.includes('₵Ɽł₥₴Ø₦25'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
                                if (z.name.includes('Impostor'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
                                 if (z.name.includes('Seaguli'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? "#db8cff" : "#db8cff", "center")
                                if (z.name.includes('Crewmate'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.blue : l.blue, "center")
@@ -2781,6 +2782,7 @@ function PlaySound210() {
                                     ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
                                   if (b.label.includes('[AI]'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, 150 > Date.now() % 300 ? "#cccecf" : "#cccecf", "center", !0);
                                   if (b.label.includes('Dev'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.yellow, "center", !0);
+                                    if (b.label.includes('₵Ɽł₥₴Ø₦25'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
                                      if (b.label.includes('?????'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
                                       if (b.label.includes('Impostor'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.red, "center", !0);
                                     if (b.label.includes('Crewmate'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
