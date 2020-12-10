@@ -10,11 +10,15 @@
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.3);
 }
-
+@font-face {
+    font-family: "freude-regular";
+      src: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/Freude.otf") format("opentype");
+    font-style: normal;
+}
 html, body {
   overflow: hidden;
   height: 100%;
-
+  cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_normal.cur"), default;
   position: fixed;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
@@ -94,9 +98,12 @@ h3 {
   color: #e8ae00;
   text-shadow: #ffe500 0 0 4px, #fff27e 0 0 6px;
 }
+.serverSelector tr:hover {   cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.cur"), auto;
+}
 .serverSelector tr.selected {
   color: #8ABC3F;
   cursor: default;
+    cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.cur"), auto;
 }
 
 .shadowScroll {
@@ -113,11 +120,14 @@ h3 {
   background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
   background-attachment: local, local, scroll, scroll;
 }
+.shadowScroll:hover {   cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.png"), auto;
+}
 a:link, a:visited {
   color: #484848;
 }
 a:link:hover, a:visited:hover {
   color: #909090;
+    cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.png"), auto;
 }
 
 input {
@@ -244,9 +254,9 @@ a.menuTab.stat {
 }
 a.menuTab:link:hover, a.menuTab:visited:hover {
   text-decoration: underline;
+  cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.png"), auto;
     animation:pfpHoverOn 800ms linear both;
 }
-
 .changelogSelectorContainer {
   height: 25px;
   font: bold 20px Caveat;
@@ -371,6 +381,7 @@ body.mobile .controlTable {
 }
 .controlTable td b:hover {
   color: #777;
+    cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.png"), auto;
 }
 .controlTable td.editing b {
   background: #fff;
@@ -434,7 +445,14 @@ body.mobile .startMenuSlidingContent {
   cursor: pointer;
   height: 15px;
 }
-
+#viewOptionText:hover { 
+  cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.cur"), default;}
+#optionArrow:hover { 
+  cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.cur"), default;}
+#bottomHolder { 
+  cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_normal.cur"), default;}
+#bottomHolder:hover { 
+  cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.cur"), default;}
 .icon {
   display: block;
   width: 96px;
@@ -445,6 +463,7 @@ body.mobile .startMenuSlidingContent {
 }
 .icon:hover {
      animation:pfpHoverOn 800ms linear both;
+    cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.cur"), auto;
 }
 .icon:active {
      animation:pfpDefault 400ms linear both;
@@ -545,6 +564,7 @@ body.mobile .icon {
 #startButton:hover {
   margin-top: 1px;
   height: 39px;
+    cursor: url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cur_over.png"), auto;
   border-bottom: 1px solid #8ABC3F;
 }
 
