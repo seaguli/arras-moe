@@ -2031,7 +2031,7 @@ function PlaySound210() {
                     if (b.measureText) {
                         if (b.measureText("test").emHeightAscent) return (a, c, d = !1) => {
                             c += B.graphical.fontSizeBoost;
-                            b.font = "bold " + c + "px Caveat";
+                            b.font = "bold " + c + "px freude-regular";
                             a = b.measureText(a);
                             return d ? {
                                 width: a.width,
@@ -2046,11 +2046,11 @@ function PlaySound210() {
                         document.body.appendChild(a);
                         return (c, d, e = !1) => {
                             d += B.graphical.fontSizeBoost;
-                            if (e) return a.style.font = "bold " + d + "px Caveat", a.innerText = c, {
+                            if (e) return a.style.font = "bold " + d + "px freude-regular", a.innerText = c, {
                                 width: a.clientWidth,
                                 height: a.clientHeight
                             };
-                            b.font = "bold " + d + "px Caveat";
+                            b.font = "bold " + d + "px freude-regular";
                             return b.measureText(c).width
                         }
                     }
@@ -2063,7 +2063,7 @@ function PlaySound210() {
                     document.body.appendChild(a);
                     return (b, d, e = !1) => {
                         d += B.graphical.fontSizeBoost;
-                        a.style.font = "bold " + d + "px Caveat";
+                        a.style.font = "bold " + d + "px freude-regular";
                         return e ? {
                             width: a.clientWidth,
                             height: a.clientHeight
@@ -2132,7 +2132,7 @@ function PlaySound210() {
                                     e = a.canvas.height /
                                         2;
                                     a.lineWidth = c;
-                                    a.font = "bold " + k + "px Caveat";
+                                    a.font = "bold " + k + "px freude-regular";
                                     a.textAlign = u;
                                     a.textBaseline = "middle";
                                     a.strokeStyle = l.black;
@@ -2703,7 +2703,7 @@ function PlaySound210() {
                                 if (//name color) {
                                 N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.yellow, "center")
                                 } else {*/
-                                N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.guiwhite, "center")
+                                N.draw(z.name, Math.round(c + 165) + 0.5, Math.round(d - 10 - 4) + 0.5, 32, l.guiwhite, "center")
                                   if (z.name.includes('[AI]'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.lgrey : l.lgrey, "center")
                               if (z.name.includes('?????'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
                                if (z.name.includes('₵Ɽł₥₴Ø₦25'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.red : l.red, "center")
@@ -2773,7 +2773,7 @@ function PlaySound210() {
                                     d = 48;
                                 b.mobile && (d += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c ? 100 / 1.4 * k.get() : 0));
                                 0 < O.data.length && V.draw("Leaderboard", Math.round(c + 100) + .5, Math.round(d - 10) + .5, 18,
-                                    l.guiwhite, "center");
+                                    l.purple, "center");
                                 for (let a = 0; a < O.data.length && (!b.mobile || 6 > a); a++) {
                                     let b = O.data[a];
                                     K(c, c + 200, d + 7, 11 + B.graphical.barChunk, l.black);
@@ -3831,6 +3831,12 @@ function PlaySound210() {
                                         });
                                     break;
                                 case a.KEY_SCREENSHOT:
+                                                a.messages.push({
+                                                    text: "Saving screenshot...",
+                                                    status: 2,
+                                                    alpha: 0,
+                                                    time: Date.now()
+                                                });
                                     var x = this.cv.toDataURL();
                                     k = atob(x.split(",")[1]);
                                     x = x.split(",")[0].split(":")[1].split(";")[0];
@@ -3842,7 +3848,7 @@ function PlaySound210() {
                                         })),
                                         w = document.createElement("a");
                                     w.style.display = "none";
-                                    w.setAttribute("download", "screenshot.png");
+                                    w.setAttribute("download", "arras.png");
                                     w.setAttribute("href", q);
                                     document.body.appendChild(w);
                                     setTimeout(() => {
