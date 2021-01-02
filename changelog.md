@@ -1,4 +1,21 @@
 # Update
+- Nerfed the entire Hivemind branch
+- Buffed the entire Smasher branch
+- Nerfed Sidewinder 
+- Nerfed Engineer's pillbox turret
+- Nerfed Manufacturer's drone count and drone health
+- Nerfed Factory's drone count
+- Slightly buffed most focused "bullet spammer" tanks
+- Buffed Shadow Tank - AI controlled tanks won't be able to see it without it attacking first
+- Renamed some tanks
+- Added 6 new tanks
+- Osprey - Branches off Hunter and Tri-Angle
+- Armsman - Branches off Trap Guard and Artillery
+- Commander - Branches off Overseer
+- Pelletmind - Branches off Hivemind and Pelleter
+- Submind - Branches off Hivemind and Subduer
+- Twinmind - Branches off Hivemind and Twin
+# Update
 - Music is now randomized
 - Overhauled the Discord controller
 - Added Fallen Booster as a Testbed and Boss tank

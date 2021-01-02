@@ -49,12 +49,18 @@ html, body, canvas {
   margin: 0;
   padding: 0;
 }
-
+canvas {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+}
 h1 {
   padding: 0;
   margin: 0;
   text-align: center;
   font: bold 40px/1.1 Caveat;
+}
+body.mobile h1 {
+  font-size: 32px;
 }
 h4 {
   text-align: center;
