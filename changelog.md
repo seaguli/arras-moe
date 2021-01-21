@@ -1,4 +1,22 @@
 # Update
+- Added a profanity fiter to the chat and player names
+- ᴛʜᴀᴛ ᴍᴇᴀɴs ɴᴏ ʟᴇᴀᴋɪɴɢ ᴛʜᴇ ᴛᴏᴋᴇɴ sɪɴᴄᴇ ᴛʜᴇ sᴇʀᴠᴇʀ ᴡɪʟʟ ᴋɪᴄᴋ ʏᴏᴜ >:)
+# Update :D
+- Added a long awaited in-game chat function
+- Press '\' to access it
+# Update
+- Reworked Testbed Menu's layout
+- Changed Pelleter's look
+- Added 8 New Tanks
+- Submachine - Branches off Sniper and Pelleter
+- Transmitter - Branches off Submachine
+- Auto-Submachine - Branches off Submachine and Auto-Basic (Lvl 45)
+- Sniper Trapper - Branches off Sniper and Trapper
+- Chasseur - Branches off Sniper Trapper and Assassin 
+- Blockade - Branches off Sniper Trapper and Borer 
+- Sparkler - Branches off Launcher 
+- Excavator - Branches off Builder and Sniper Trapper
+# Update
 - Eggs, Squares and Triangles will now spawn naturally and will no longer despawn.
 - And with that brings 3 new tanks, all branching off Underseer:
 - Pentaseer 
