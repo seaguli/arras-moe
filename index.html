@@ -249,7 +249,7 @@ function PlaySound() {
   window.onerror = function(message, source, lineno, colno, error) {
     window.onerror = null
     if (error) error = error.toString()
-    console.warn('The game crashed, refreshing page to recover from error')
+    console.warn('The game crashed, refreshing page to recover from the error')
     if (error == null && lineno == 0 && colno == 0) return
     var e = JSON.stringify({
       message: message,
@@ -258,7 +258,7 @@ function PlaySound() {
       colno: colno,
       error: error
     })
-    prompt('The game may have crashed, refresh the page to recover from error. If this is a private server, make sure to check the changelog for any server updates. Error information:', e)
+    prompt('The game may have crashed, refresh the page to recover from the error. Error information:', e)
   }
   </script>
   <script src="./bundle.js"></script>
