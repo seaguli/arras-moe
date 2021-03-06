@@ -4,9 +4,9 @@
   <!-- Meta Properties -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <meta name="description" content="This 2D shooter game is full of cute tanks! Will you write the way into their nonexistent hearts?">
+  <meta name="description" content="The game is full of cute tanks! Will you write the way into their nonexistent hearts?">
   <meta name="robots" content="index, follow">
-  <meta property="og:image" content="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fddlc_logo_blank_by_rockmedved_dc7ztrw-pre%20(8)%20(1).png?v=1599640072639">
+  <meta property="og:image" content="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(27).png?v=1614416407678">
   <meta property="og:image:width" content="100">
   <meta property="og:image:height" content="100">
   <title>arras.io</title>
@@ -20,7 +20,7 @@
   aiptag.gdprShowConsentTool = true;
   </script>
   <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fddlc_logo_blank_by_rockmedved_dc7ztrw-pre%20(8)%20(1).png?v=1599640072639">
+  <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(27).png?v=1614416407678">
   <meta name="theme-color" content="#8abc3f">
 </head>
 <!https://discordapp.com/oauth2/authorize?client_id=427927499071160320&redirect_uri=http%3A%2F%2Farras.io%2Fcallback&response_type=code&scope=identify%20email -->
@@ -33,31 +33,21 @@ function PlaySound1() {
     bflat2.play();
 }
                             </script>
-                            <script>
-var music2 = new Audio();
-                                  const months = ["https://vgmsite.com/soundtracks/doki-doki-literature-club-gamerip/lppruwpt/BGM%2003.mp3", "https://vgmsite.com/soundtracks/doki-doki-literature-club-gamerip/zqniugqq/BGM%2002.mp3", "https://vgmsite.com/soundtracks/doki-doki-literature-club-gamerip/xbjocjgx/BGM%2005.mp3"];
-
-var rand = months[~~(Math.random() * months.length)];
-music2.src = (rand);
-function PlayMusic() {
-  music2.load();   
-    music2.play();
-}
-</script>
-
-                          <script>
-                            
-                          function switchAudio() {
-                              if (document.getElementById("optSound").checked === true) {
-                                   music2.play()
-                                  music2.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-}, false);
-                              } else if (document.getElementById("optSound").checked === false) {
-                                   music2.pause()
+                    <audio loop id = "music">
+<source
+type = "audio/mpeg"
+src = "https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fbgm_14.ogg?v=1615013560027"/>
+oof no music for u
+</audio>
+<script>
+function switchAudio() {
+if (document.getElementById("optSound").checked === true) {
+document.getElementById("music").play()
+} else if (document.getElementById("optSound").checked === false) {
+document.getElementById("music").pause()
                               }
                               return;
+  return;
                           }
 
                           </script>
@@ -94,7 +84,7 @@ function PlaySound() {
         <div class="startMenuHolder">
           <div class="sliderHolder">
             <div class="slider startMenuSlidingContent">
-              <center><img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fddlc_logo_blank_by_rockmedved_dc7ztrw-pre%20(8)%20(1).png?v=1599640072639" onmouseover="PlaySound1()" onclick="PlaySound()" title="arras.io" class="icon" alt="arras icon"></center>
+              <center><img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(27).png?v=1614416407678" onmouseover="PlaySound1()" onclick="PlaySound()" title="arras.io" class="icon" alt="arras icon"></center>
               <h1>arras.io beta</h1>
                               <noscript>
     <h4>Please enable JavaScript to play!</h4>
@@ -105,7 +95,7 @@ function PlaySound() {
             </div>
             <div class="slider" id="startMenuSlidingTrigger" onmouseover="PlaySound1()">
               <h3>
-                <span id="viewOptionText" onclick="PlaySound3()">view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
+                <span id="viewOptionText" onclick="PlaySound()" >view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
               </h3>
             </div>
             <div class="slider startMenuSlidingContent">

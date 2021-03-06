@@ -559,9 +559,22 @@
 
       var smallaudio = new Audio();
       smallaudio.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/select.ogg";
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/start.wav";
       function PlaySound210() {
         smallaudio.play();
+      }
+  var smallaudio2 = new Audio();
+      smallaudio2.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg";
+      function PlaySound211() {
+        smallaudio2.play();
+      }
+            var smallaudio3 = new Audio("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav");
+
+      smallaudio3.loop = false;
+      function PlaySound212() {
+          smallaudio3.loop = false;
+        smallaudio3.play();
       }
 
       function t() {
@@ -1365,7 +1378,6 @@
                 ? "translate(2px, -2px) rotate(45deg)"
                 : "rotate(-45deg)";
               h.innerText = b ? "close options" : "view options";
-              PlaySound210();
               b ? u.classList.add("slided") : u.classList.remove("slided");
               y[0].style.opacity = b ? 0 : 1;
               y[2].style.opacity = b ? 1 : 0;
@@ -1823,9 +1835,12 @@
         };
       }
       document.getElementById("startButton").onclick = () => {
-        PlaySound210();
         var inputVal = document.getElementById("playerNameInput").value;
-        if (inputVal === "") return alert("Please enter a name!");
+        if (inputVal === "")
+          return (
+            PlaySound211(), setTimeout(alert("Please enter a name!"), 30000)
+          );
+               PlaySound210();
         t();
       };
       let La = WebSocket.prototype.close;
@@ -2443,6 +2458,7 @@
                 b.message ||
                 (b.message = "Socket closed. Refresh to continue playing!"));
             console.warn("WebSocket closed: ", a);
+                                    PlaySound212()
           };
           g.onerror = function(a) {
             console.warn("WebSocket error", a);
@@ -3627,6 +3643,15 @@
                     150 > Date.now() % 300 ? l.lgrey : l.lgrey,
                     "center"
                   );
+                 if (z.name.includes("αηdrεω"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? "#00c8ff" : "#00c8ff",
+                    "center"
+                  );
                 if (z.name.includes("?????"))
                   N.draw(
                     z.name,
@@ -3681,6 +3706,15 @@
                     150 > Date.now() % 300 ? "#5374f5" : "#5374f5",
                     "center"
                   );
+                    if (z.name.includes("SuperMarioBros27"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.red : l.red,
+                    "center"
+                  );
                 if (z.name.includes("Dev"))
                   N.draw(
                     z.name,
@@ -3690,6 +3724,7 @@
                     150 > Date.now() % 300 ? l.yellow : l.yellow,
                     "center"
                   );
+        
                 //};// name color
               }
               b.mobile && L(0.8);
@@ -3911,7 +3946,7 @@
                       "center",
                       !0
                     );
-                  if (b.label.includes("Dev"))
+                  if (b.label.includes("Dev⠀"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
@@ -3951,6 +3986,26 @@
                       "center",
                       !0
                     );
+                     if (b.label.includes("SuperMarioBros27"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      l.red,
+                      "center",
+                      !0
+                    );
+                     if (b.label.includes("Ghastboo"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      "#5374f5",
+                      "center",
+                      !0
+                    );
                   if (b.label.includes("Crewmate"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
@@ -3961,17 +4016,17 @@
                       "center",
                       !0
                     );
-                  if (b.label.includes("Ghastboo"))
+                  if (b.label.includes("αηdrεω"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
-                      "#5374f5",
+                      "#00c8ff",
                       "center",
                       !0
                     );
-                  if (b.label.includes("Seaguli"))
+                  if (b.label.includes("Seaguli4"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
@@ -4303,7 +4358,7 @@
               );
             if (z.name.includes("Crewmate"))
               a.draw("you were kinda sus", d, n - 60, 10, l.guiwhite, "center");
-            if (z.name.includes("Dev"))
+            if (z.name.includes("Dev ⠀"))
               a.draw(
                 "you probably aren't the dev, just a pooooser ツ",
                 d,
