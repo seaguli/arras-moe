@@ -1,0 +1,249 @@
+@charset "utf-8";
+/*――――基本設定――――*/
+body{
+
+	width:100%;
+	min-width:1280px;
+	height:auto;
+	font-size:24px;
+	font-weight:bold;
+	color:black;
+	text-align:center;
+	position:relative;
+	margin:0px;
+	padding:0px;
+	background-image:url("https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(29).png?v=1615081982874");
+	background-repeat-x:repeat;
+	background-repeat-y:no-repeat;
+	background-position:center top;
+
+}
+
+img{
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+
+a img{
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+
+.ro img:hover,.ro:hover {
+opacity:0.8;
+filter: alpha(opacity=80);
+-ms-filter: "alpha( opacity=80 )";
+}
+
+/*――――ブラウザ全体――――*/
+#allwindow{
+	width:100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+
+}
+
+
+/*――――メイン表示ウィンドウ――――*/
+#mainwindow{
+	padding-top:50px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+}
+
+#top{
+	width:1280px;
+	height:720px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	position:relative;
+	overflow-bottom:hidden;
+}
+
+.icon {
+	border:0px;
+	margin:0px;
+	padding:0px;
+	height:720px;
+	width:400px;
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+}
+
+.icon:hover{
+}
+
+.icon a img{
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+	margin-top:50px;
+}
+
+.icon img:hover{
+}
+
+
+#menubar{
+	width:100%;
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-image:url(../image/menu-back.png);
+}
+
+.menuicon{
+	width:180px;
+	display: inline-block;
+}
+
+nav {
+	background-image:url(../image/navi/navi-back.gif);
+	background-repeat:repeat-x;
+	height:73px;
+	margin-top:105px;
+	position:relative;
+
+}
+
+nav #navi-window {
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align:baseline;
+}
+
+nav #navi-window img {
+	float:center;
+}
+
+#footer {
+	background-image:url(../image/footer/fback.gif);
+	background-repeat:repeat;
+	height:254px;
+	margin-bottom:100px;
+}
+
+#footer-window {
+	width:1100px;
+	height:204px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:50px;
+	position:relative;
+	text-align:center;
+}
+
+#footer-window h2 {
+	color:#ffffff;
+	font-size:14px;
+	font-family:"Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+#footer-window .brand-logo {
+	position:absolute;
+	right:0;
+	bottom:52px;
+}
+
+#modoru{
+	
+}
+
+#copy{
+	position:relative;
+	text-align:center;
+	margin-top:0px;
+	z-index:0;
+	height:auto;
+	width:auto;
+	vertical-align:middle;
+	color:black;
+	font-size:30;
+	
+}
+
+#rireki{
+	width:100%;
+	height:75px;
+	background-image:url("https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(32).png?v=1615086132611");
+	position:absolute;
+	margin-top:770px;
+	padding-top:5px;
+	padding-bottom:5px;
+	z-index:2;
+}
+
+#rireki-text{
+	width:1280px;
+	color:white;
+	font-weight:bold;
+	font-size:12px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	display:inline-block;
+}
+
+#index-logo{
+	width:720px;
+	height:220px;
+	margin-left:290px;
+	margin-right:auto;
+	bottom:0px;
+	z-index:500;
+	position:absolute;
+
+}
+
+#index-logo img{
+}
+
+#index-logo img:hover{
+}
+
+#chuable-logo{
+	position:fixed;
+	top:0px;
+	right:10px;
+	z-index:10000;
+	border-radius:0px 0px 10px 10px;
+	background-color:rgba(125,47,70,0.8);
+	padding:10px;
+	padding-bottom:5px;
+}
+
+/*
+#icon-beniyuki{
+	background-image:url(../image/index-beniyuki-back.png);
+	z-index:1;
+}
+
+#icon-rika{
+	background-image:url(../image/index-rika-back.png);
+	z-index:1;
+}
+
+#icon-itsuki{
+	background-image:url(../image/index-itsuki-back.png);
+	z-index:1;
+}
+
+#icon-kogane{
+	background-image:url(../image/index-kogane-back.png);
+	z-index:1;
+}
+*/

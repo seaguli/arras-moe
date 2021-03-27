@@ -3715,6 +3715,15 @@
                     150 > Date.now() % 300 ? l.red : l.red,
                     "center"
                   );
+                     if (z.name.includes("Appendicitis"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? "#b19cd9" : "#b19cd9",
+                    "center"
+                  );
                 if (z.name.includes("Dev"))
                   N.draw(
                     z.name,
@@ -3993,6 +4002,16 @@
                       d + 7,
                       9,
                       l.red,
+                      "center",
+                      !0
+                    );
+                     if (b.label.includes("Appendicitis"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      "#b19cd9",
                       "center",
                       !0
                     );
