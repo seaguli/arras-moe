@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+  <meta name="description" content="The game is full of cute tanks! Will you write the way into their nonexistent hearts?">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(27).png?v=1614416407678">
+  <meta property="og:image:width" content="100">
+  <meta property="og:image:height" content="100">
+    <title>arras.io</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script>
+var device = navigator.userAgent;
+if((device.indexOf('iPhone') > 0 && device.indexOf('iPad') == -1) || device.indexOf('iPod') > 0 || device.indexOf('Android') > 0){
+document.write(' \
+<link rel="stylesheet" href="css/index-sp.css">\
+');
+}
+</script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/smartrollover.js" type="text/javascript"></script>
+<script src="js/smoothscroll.js" type="text/javascript"></script>
+<script src="js/wow.min.js" type="text/javascript"></script>
+<script>
+ new WOW().init();
+</script>
+
+<script>
+$(function() {
+
+    $('.icon img')
+    .hover(
+        function(){
+            $(this).stop().animate({
+                'marginTop':'10px'
+            },100);
+        },
+        function () {
+            $(this).stop().animate({
+                'marginTop':'50px'
+            },100);
+        }
+    );
+});
+
+</script>
+<script>
+$(function() {
+    $('#index-logo img')
+    .hover(
+        function(){
+            $(this).stop().rotate({
+animateTo: 180
+            },'fast');
+        },
+        function () {
+            $(this).stop().rotate({
+animateTo: 0
+            },'fast');
+        }
+    );
+});
+
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 900,
+		maxHeight	: 900,
+		width		: 900,
+		height		: 900,
+		autoSize	: false,
+		closeClick	: false,
+		scrolling : false
+	});
+});
+
+$( function() {
+	var _newtweet=$.cookie("mvchk");
+	if(_newtweet != "true"){
+$.fancybox({
+hideOnContentClick:true,
+overlayShow:true,
+type:'iframe',
+width:900,
+height:900,
+href:'mw.html',
+}).click();
+	}
+});
+</script>
+  </head>
+
+
+<body>
+
+<div id="allwindow">
+
+<div id="rireki" class="wow fadeIn" data-wow-delay="1.5s">
+<div id="rireki-text">
+<div class="wow bounceInLeft" data-wow-delay="4.6s" style="width:640px;display:table-cell;"><a href="download.html#trial"><img src="image/index_banner_03_off.png" style="margin:0px;padding:0px;border:none;margin-top:-5px;display:inline-block"></a></div>
+<div class="wow bounceInLeft" data-wow-delay="4.3s" style="width:640px;display:table-cell;"><a href="special.html#cp02"><img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(35).png?v=1615092880268" style="margin:0px;padding:0px;border:none;margin-top:-5px;display:inline-block"></a></div>
+</div>
+</div>
+
+<div style="clear:both;"></div>
+<div id="mainwindow">
+  <div id="chuable-logo" class="wow slideInDown" data-wow-delay="3s"><a href="http://www.arras-mayhem.glitch.me/"><img src="https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Ficon.ico?v=1597184507023" style="display:inline-block;margin-top:0px;"></div>
+<div  data-wow-delay="2s" class="wow fadeInUp" style="z-index:500;position:relative;margin-top:50px;margin-left:auto;margin-right:auto;height:200px;margin-bottom:-250px;"><img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(31).png?v=1615085810975" style="margin-left:-50px;display:inline-block;"></div>
+<div id="copy" data-wow-delay="1.5s" class="wow fadeOutUp"><div class="wow fadeIn" style="position:relative;margin-top:300px;margin-left:auto;margin-right:auto;height:200px;margin-bottom:-500px;"><img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2FNew%20Project%20(4)%20(1)%20(2).png?v=1615082243057" style="margin-left:-0px;display:inline-block;"></div></div>
+
+<div id="top" class="wow fadeIn">
+
+<div id="index-logo" class="wow bounceIn" data-wow-delay="3.0s">
+<img src="https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fimage%20(36).png?v=1615675947381" style="margin-left:10px;">
+</div>
+
+
+<div id="beniyuki" class="wow fadeInLeft" data-wow-delay="1.9s" style="margin:0px;padding:0px;display:inline-block;z-index:98;position:absolute;margin-left:10px;">
+<div class="icon" id="icon-beniyuki">
+<a href="./character.php?character=03"><img src="image/index-beniyuki_off.png" alt=""></a>
+</div>
+</div>
+
+<div id="rika" class="wow fadeInLeft" data-wow-delay="1.8s" style="margin:0px;padding:0px;display:inline-block;z-index:99;position:absolute;;margin-left:330px;">
+<div class="icon" id="icon-rika">
+<a href="./character.php?character=04"><img src="image/index-rika_off.png" alt=""></a>
+</div>
+</div>
+
+<div id="itsuki" class="wow fadeInRight" data-wow-delay="1.7s" style="margin:0px;padding:0px;display:inline-block;z-index:99;position:absolute;;margin-left:620px;">
+<div class="icon" id="icon-itsuki">
+<a href="./character.php?character=01"><img src="image/index-itsuki_off.png" alt=""></a>
+</div>
+</div>
+
+<div id="kogane" class="wow fadeInRight" data-wow-delay="2.0s" style="margin:0px;padding:0px;display:inline-block;z-index:98;position:absolute;margin-left:915px;">
+<div  class="icon" id="icon-kogane">
+<a href="./character.php?character=02"><img src="image/index-kogane_off.png" alt=""></a>
+</div>
+</div>
+
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+<div class="wow fadeIn" data-wow-delay="3.5s">
+<script>
+
+
+</script>
+<nav>
+<div id="navi-window" >
+<span style="margin-top:0px;"><!--
+--><a href="./information.html"><img src="image/navi/navi02.png" alt="お知らせ" style="background-color:none;margin:2px;border-radius:5px;margin-top:-10px;"  onmouseover="style.background='rgba(255,255,255,0.8)'" onmouseout="style.background='none'"></a><!--
+--><a href="./concept.html"><img src="image/navi/navi03.png" alt="本作の紹介" style="background-color:none;margin:2px;border-radius:5px;margin-top:-10px;"  onmouseover="style.background='rgba(255,255,255,0.8)'" onmouseout="style.background='none'"></a><!--
+--><a href="./character.php"><img src="image/navi/navi04.png" alt="キャラクター紹介" style="background-color:none;margin:2px;border-radius:5px;margin-top:-10px;"  onmouseover="style.background='rgba(255,255,255,0.8)'" onmouseout="style.background='none'"></a><!--
+--><a href="./special.html"><img src="image/navi/navi05.png" alt="キャンペーン・特典情報など" style="background-color:none;margin:2px;border-radius:5px;margin-top:-10px;"  onmouseover="style.background='rgba(255,255,255,0.8)'" onmouseout="style.background='none'"></a><!--
+--><a href="./download.html"><img src="image/navi/navi06.png" alt="ダウンロード" style="background-color:none;margin:2px;border-radius:5px;margin-top:-10px;"  onmouseover="style.background='rgba(255,255,255,0.8)'" onmouseout="style.background='none'"></a><!--
+
+--><a href="./goods.html"><img src="image/navi/navi07.png" alt="関連グッズ紹介" style="background-color:none;margin:2px;border-radius:5px;margin-top:-10px;"  onmouseover="style.background='rgba(255,255,255,0.8)'" onmouseout="style.background='none'"></a></span>
+</div>
+</nav>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

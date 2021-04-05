@@ -1,4 +1,27 @@
 # Update
+- Changed Minigun and Streamliner's looks
+- Added 2 new tanks
+- Firestarter - Branches off Minigun and Cruiser
+- Sprinkler - Branches off Machine Gun at Lvl 45
+# Update
+- Added a status page
+- Buffed all Smashers
+# Update
+- Nerfed Twin-3
+- Removed Blaster, as it was too unique compared to other tanks of it's class
+- The Trapper Dominator will no longer spawn
+- Removed Sentries from the Testbed A menu due to a bug involving AI
+# Update
+- Revamped the Discord Controller
+- Testers using the invisibility keybind will no longer be permanently invisible
+# Update
+- Nerfed Sparkler
+- Buffed Bosses
+- Added Arsenal, branches off Artillery and Triple Shot
+# Update
+- Added Auto-Trapper, branches off Trapper and Auto-Basic
+- Added more sound effects to the client 
+# Update
 - Added custom keybind support for various functions, including chat.
 # Update
 - Players with god mode enabled will no longer leave a ghost when entering an enemy base and when disconnecting

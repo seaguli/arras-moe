@@ -3715,6 +3715,15 @@
                     150 > Date.now() % 300 ? l.red : l.red,
                     "center"
                   );
+                     if (z.name.includes("Appendicitis"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? "#b19cd9" : "#b19cd9",
+                    "center"
+                  );
                 if (z.name.includes("Dev"))
                   N.draw(
                     z.name,
@@ -3993,6 +4002,16 @@
                       d + 7,
                       9,
                       l.red,
+                      "center",
+                      !0
+                    );
+                     if (b.label.includes("Appendicitis"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      "#b19cd9",
                       "center",
                       !0
                     );
@@ -5659,7 +5678,7 @@
                         let k = URL.createObjectURL(a),
                           q = document.createElement("a");
                         q.style.display = "none";
-                        q.setAttribute("download", "video.webm");
+                        q.setAttribute("download", "arras.webm");
                         q.setAttribute("href", k);
                         document.body.appendChild(q);
                         setTimeout(() => {
@@ -5685,8 +5704,15 @@
                     });
                   break;
                 case a.KEY_SCREENSHOT:
+                      var smallaudio4 = new Audio();
+      smallaudio4.src =
+        "https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fsse_00_05.wav?v=1617172789540";
+      function PlaySound213() {
+        smallaudio4.play();
+      }
+                                    PlaySound213()
                   a.messages.push({
-                    text: "Saving screenshot...",
+                   text: "Saving screenshot...",
                     status: 2,
                     alpha: 0,
                     time: Date.now()
