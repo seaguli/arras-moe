@@ -110,6 +110,7 @@ h3 {
   height: 40px;
   text-align: center;
   font-size: 14px;
+  background-size: 300px 100px;
   font-weight: bold;
   line-height: 13px;
   padding-left: 10px;
@@ -119,6 +120,9 @@ h3 {
 }
 .serverSelector tr {
   color: #828282;
+      background-image: url("https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Ffrm_config13.png?v=1619466393485");
+    background-repeat: cover;
+  background-size: 5% 5%;
   cursor: pointer;
 }
 .serverSelector tr.featured {
@@ -286,7 +290,7 @@ a.menuTab:link:hover, a.menuTab:visited:hover {
 }
 .changelogSelectorContainer {
   height: 25px;
-  font: bold 20px Caveat;
+  font: bold 20px freude-regular;
   text-align: center;
   padding: 0 15px 5px 0;
   overflow: auto hidden;

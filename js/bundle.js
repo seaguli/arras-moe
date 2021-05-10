@@ -17,6 +17,39 @@
       );
     return r + "";
   };
+                                                                                    var smallaudio5 = new Audio();
+      smallaudio5.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
+      function PlaySound214() {
+        smallaudio5.play();
+      }
+        var smallaudio = new Audio();
+      smallaudio.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/start.wav";
+      function PlaySound210() {
+        smallaudio.play();
+      }
+  var smallaudio2 = new Audio();
+      smallaudio2.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg";
+      function PlaySound211() {
+        smallaudio2.play();
+      }
+    var smallaudio6 = new Audio();
+      smallaudio6.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
+      function PlaySound215() {
+        smallaudio6.play();
+      }
+  
+            var smallaudio3 = new Audio("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav");
+
+      smallaudio3.loop = false;
+      function PlaySound212() {
+          smallaudio3.loop = false;
+        smallaudio3.play();
+      }
+
   I.ASSUME_ES5 = !1;
   I.ASSUME_NO_NATIVE_MAP = !1;
   I.ASSUME_NO_NATIVE_SET = !1;
@@ -557,25 +590,6 @@
         return btoa(b).replace(/=+/, "");
       }
 
-      var smallaudio = new Audio();
-      smallaudio.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/start.wav";
-      function PlaySound210() {
-        smallaudio.play();
-      }
-  var smallaudio2 = new Audio();
-      smallaudio2.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg";
-      function PlaySound211() {
-        smallaudio2.play();
-      }
-            var smallaudio3 = new Audio("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav");
-
-      smallaudio3.loop = false;
-      function PlaySound212() {
-          smallaudio3.loop = false;
-        smallaudio3.play();
-      }
 
       function t() {
         if (!ua) {
@@ -5100,6 +5114,7 @@
                 ),
               !1
             );
+
           this._var.checking = !0;
           null === this._var.bait && this._creatBait();
           var e = this;
@@ -5647,6 +5662,8 @@
                     if (this.videoRecorder)
                       switch (this.videoRecorder.state) {
                         case "inactive":
+
+                                    PlaySound214()
                           a.messages.push({
                             text: "Recorder started!",
                             status: 2,
@@ -5656,6 +5673,7 @@
                           this.videoRecorder.start();
                           break;
                         case "recording":
+                          PlaySound215()
                           a.messages.push({
                             text: "Recorder stopped! Saving file...",
                             status: 2,
@@ -5687,6 +5705,7 @@
                         }, 100);
                         q.click();
                       };
+PlaySound214()
                       a.messages.push({
                         text: "Recorder initiated and started!",
                         status: 2,
@@ -5706,7 +5725,7 @@
                 case a.KEY_SCREENSHOT:
                       var smallaudio4 = new Audio();
       smallaudio4.src =
-        "https://cdn.glitch.com/dd930f2e-3b2b-4799-a3cd-e67555a165f5%2Fsse_00_05.wav?v=1617172789540";
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
       function PlaySound213() {
         smallaudio4.play();
       }
