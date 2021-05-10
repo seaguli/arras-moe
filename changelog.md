@@ -1,4 +1,47 @@
 # Update
+- Added 5 new tanks
+- Storm - Branches off Flank Guard and Pelleter
+- Auto-Storm - Branches off Auto-Basic and Storm
+- Arbalest - Branches off Launcher and Artillery
+- Trojan - Branches off Overseer and Pathogen
+- Fog - Branches off Storm and Cloaker
+- Nerfed Backer
+# Update
+- Added 3 new tanks
+- Moth - Branches off Hexa Tank and Pelleter at lvl45
+- Gatling Gun - Branches off Sniper and Machine Gun
+- Chain Gun - Branches off Gatling Gun
+- Nerfed Wasp
+- Buffed Bosses
+- Buffed Stiletto-branch animated tanks
+# Update
+- Added 7 new tanks
+- Bumper - Branches off Launcher and Destroyer
+- Contractor - Branches off Builder, Bruiser and Twin Trapper
+- Whirlwind - Branches off Hexa Tank
+- Spinner - Branches off Hexa Tank
+- Fort - Branches off Contagion and Builder
+- Amoeba - Branches off Spawner and Pathogen
+- Assasinator - Branches off Drone Guard and Assassin
+# Update
+- Added 5 new tanks
+- Bodyguard - Branches off Pounder and Flank Guard
+- Bouncer - Branches off Destroyer and Bodyguard
+- Auto-Bodyguard - Branches off Bodyguard and Auto-Basic at Lvl45
+- Trailblazer - Branches off Tri-Angle and Lancer at Lvl45
+- Bastion - Branches off Bayonet and Gunner
+# Update
+- Fixed a bug where sentries and crashers would not spawn on FFA
+- Nerfed Penetrator, all shotgun-branch tanks
+- Added a new tank:
+- Swivel-3 - Branches off Auto-3
+# Update
+- Removed all healing tanks due to them being very buggy
+- The Shotgun Dominator will no longer spawn
+- Added a MAX_CHILDREN: cap for certain laggy tanks
+- Added a new tank:
+- Rimfire - Branches off Gunner
+# Update
 - Changed Minigun and Streamliner's looks
 - Added 2 new tanks
 - Firestarter - Branches off Minigun and Cruiser
